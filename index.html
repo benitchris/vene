@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>VENE Sauna and Massage | Kicukiro Sonatube Silverback Mall Kigali</title>
   <meta name="description" content="VENE Sauna and Massage at Kicukiro Sonatube, Silverback Mall. Premium massage therapy, sauna, aerobics, and mobile home visit services in Kigali, Rwanda. Call 0788625531.">
   <link rel="icon" type="image/png" href="assets/images/logo.png">
@@ -255,10 +255,36 @@
     </div>
   </section>
 
-  <!-- WhatsApp Floating Action Button -->
+  <!-- WhatsApp Floating Action Button (Desktop only) -->
   <a href="https://wa.me/250788625531?text=Hello%20VENE%20Sauna%20and%20Massage,%20I%20would%20like%20to%20inquire%20about%20booking%20a%20service." target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
+
+  <!-- Mobile Bottom Navigation Bar (App-style) -->
+  <nav class="mobile-bottom-nav" id="mobile-bottom-nav">
+    <a href="#hero" class="bottom-nav-item active" id="bn-home" onclick="setBottomNav('bn-home')">
+      <i class="fa-solid fa-house"></i>
+      <span>Home</span>
+    </a>
+    <a href="#packages" class="bottom-nav-item" id="bn-sauna" onclick="setBottomNav('bn-sauna')">
+      <i class="fa-solid fa-fire-flame-curved"></i>
+      <span>Sauna</span>
+    </a>
+    <a href="#" class="bottom-nav-item bottom-nav-cta" onclick="openBookingModal(); return false;">
+      <div class="bottom-nav-cta-circle">
+        <i class="fa-brands fa-whatsapp"></i>
+      </div>
+      <span>Book Now</span>
+    </a>
+    <a href="#services" class="bottom-nav-item" id="bn-massage" onclick="setBottomNav('bn-massage')">
+      <i class="fa-solid fa-spa"></i>
+      <span>Massage</span>
+    </a>
+    <a href="#location" class="bottom-nav-item" id="bn-location" onclick="setBottomNav('bn-location')">
+      <i class="fa-solid fa-location-dot"></i>
+      <span>Location</span>
+    </a>
+  </nav>
 
   <!-- Booking Modal Popup -->
   <div class="modal-overlay" id="booking-modal">

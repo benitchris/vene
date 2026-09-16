@@ -160,6 +160,25 @@ function closeMobileMenu() {
   }
 }
 
+// Mobile Bottom Nav active state
+function setBottomNav(activeId) {
+  closeMobileMenu();
+  document.querySelectorAll('.bottom-nav-item').forEach(el => el.classList.remove('active'));
+  const el = document.getElementById(activeId);
+  if (el) el.classList.add('active');
+}
+
+// Close mobile menu when tapping outside
+document.addEventListener('click', (e) => {
+  const navLinks = document.getElementById('nav-links');
+  const menuBtn = document.querySelector('.mobile-menu-btn');
+  if (navLinks && navLinks.classList.contains('mobile-open')) {
+    if (!navLinks.contains(e.target) && !menuBtn.contains(e.target)) {
+      closeMobileMenu();
+    }
+  }
+});
+
 // Initialize application on load
 document.addEventListener('DOMContentLoaded', () => {
   renderServices();
