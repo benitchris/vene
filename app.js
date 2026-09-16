@@ -63,7 +63,7 @@ const massageServices = [
     category: "combo",
     workplacePrice: 15000,
     homePrice: 25000,
-    workplaceTime: "1h 30 min",
+    workplaceTime: "1 hr",
     homeTime: "1 hr",
     desc: "Exfoliating botanical scrub followed by a hydrating massage."
   },
@@ -73,7 +73,7 @@ const massageServices = [
     category: "therapeutic",
     workplacePrice: 25000,
     homePrice: 45000,
-    workplaceTime: "1h 30 min",
+    workplaceTime: "1 hr",
     homeTime: "1 hr",
     desc: "Pressure point therapy targeting reflex zones connected to body organs."
   },
@@ -83,7 +83,7 @@ const massageServices = [
     category: "therapeutic",
     workplacePrice: 20000,
     homePrice: 40000,
-    workplaceTime: "1h 10 min",
+    workplaceTime: "1 hr",
     homeTime: "1 hr",
     desc: "Intense deep muscle pressure targeting chronic knots and tightness."
   },
@@ -93,7 +93,7 @@ const massageServices = [
     category: "relax",
     workplacePrice: 20000,
     homePrice: 40000,
-    workplaceTime: "1h 30 min",
+    workplaceTime: "1 hr",
     homeTime: "1 hr",
     desc: "Traditional Hawaiian continuous fore-arm massage for deep healing."
   },
@@ -103,7 +103,7 @@ const massageServices = [
     category: "combo",
     workplacePrice: 25000,
     homePrice: 45000,
-    workplaceTime: "1h 30 min",
+    workplaceTime: "1 hr",
     homeTime: "1 hr",
     desc: "Ultimate pampering combo of full body Swedish massage & radiant scrub."
   },
@@ -113,7 +113,7 @@ const massageServices = [
     category: "therapeutic",
     workplacePrice: 25000,
     homePrice: 45000,
-    workplaceTime: "1h 30 min",
+    workplaceTime: "1 hr",
     homeTime: "1 hr",
     desc: "Specialized clinical massage techniques targeting specific pain zones."
   },
@@ -123,7 +123,7 @@ const massageServices = [
     category: "therapeutic",
     workplacePrice: 30000,
     homePrice: 50000,
-    workplaceTime: "1h 30 min",
+    workplaceTime: "1 hr",
     homeTime: "1 hr",
     desc: "Rehabilitation and muscle recovery massage tailored for active lifestyle."
   },
@@ -133,7 +133,7 @@ const massageServices = [
     category: "combo",
     workplacePrice: 30000,
     homePrice: 50000,
-    workplaceTime: "1h 30 min",
+    workplaceTime: "1 hr",
     homeTime: "1 hr",
     desc: "Luxurious synchronized therapy performed simultaneously by two therapists."
   }
