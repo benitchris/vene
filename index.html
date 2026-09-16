@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VENE Sauna and Massage | Kicukiro Sonatube Silverback Mall Kigali</title>
+  <meta name="description" content="VENE Sauna and Massage at Kicukiro Sonatube, Silverback Mall. Premium massage therapy, sauna, aerobics, and mobile home visit services in Kigali, Rwanda. Call 0788625531.">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand-link">
+        <img src="assets/images/logo.png" alt="VENE Sauna and Massage Logo" class="brand-logo-img">
+        <div class="brand-title">VENE <span>SAUNA & MASSAGE</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#packages">Sauna & Aerobics</a></li>
+        <li><a href="#services">Massage Menu</a></li>
+        <li><a href="#location">Location</a></li>
+        <li><a href="tel:0788625531" class="btn-outline-gold"><i class="fa-solid fa-phone"></i> 0788625531</a></li>
+        <li><button onclick="openBookingModal()" class="btn-gold"><i class="fa-brands fa-whatsapp"></i> Book Now</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-logo-wrapper">
+        <img src="assets/images/logo.png" alt="VENE Golden Lotus Logo" class="hero-logo">
+      </div>
+      <div class="hero-subtitle">Relax • Rejuvenate • Feel Better</div>
+      <h1 class="hero-title font-serif">VENE <span class="gold-text">Sauna & Massage</span></h1>
+      
+      <div class="hero-location-tag">
+        <i class="fa-solid fa-location-dot"></i> Kicukiro Sonatube, Silverback Mall, Kigali
+      </div>
+      
+      <p class="hero-description">
+        Experience ultimate wellness, deep muscle relaxation, and rejuvenating steam treatments. Enjoy our luxury spa center at Silverback Mall or call us for professional home & hotel mobile massage visits across Kigali!
+      </p>
+
+      <div class="hero-actions">
+        <button onclick="openBookingModal()" class="btn-gold">
+          <i class="fa-brands fa-whatsapp"></i> Book Appointment (WhatsApp)
+        </button>
+        <a href="#services" class="btn-outline-gold">
+          <i class="fa-solid fa-list-check"></i> View Pricing Menu
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Pillars Ribbon -->
+  <section class="pillars-ribbon" id="about">
+    <div class="pillars-grid">
+      <div class="pillar-item">
+        <div class="pillar-icon"><i class="fa-solid fa-brain"></i></div>
+        <div class="pillar-title">Relax Your Mind</div>
+        <div class="pillar-desc">Soothing ambiance and holistic aromatherapy</div>
+      </div>
+      <div class="pillar-item">
+        <div class="pillar-icon"><i class="fa-solid fa-heart"></i></div>
+        <div class="pillar-title">Relieve Your Stress</div>
+        <div class="pillar-desc">Deep pressure techniques to melt away tension</div>
+      </div>
+      <div class="pillar-item">
+        <div class="pillar-icon"><i class="fa-solid fa-spa"></i></div>
+        <div class="pillar-title">Restore Your Body</div>
+        <div class="pillar-desc">Purifying sauna steam & invigorating workouts</div>
+      </div>
+      <div class="pillar-item">
+        <div class="pillar-icon"><i class="fa-solid fa-leaf"></i></div>
+        <div class="pillar-title">Live Better</div>
+        <div class="pillar-desc">Your wellness is our priority every single day</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Toggle & Pricing Section -->
+  <section class="section" id="packages">
+    <div class="section-header">
+      <span class="gold-badge">Choose Your Location</span>
+      <h2 class="section-title">Sauna & Aerobic Packages</h2>
+      <p class="section-subtitle">High-end fitness and relaxation facilities at Silverback Mall, Kicukiro Sonatube.</p>
+    </div>
+
+    <!-- Location Switcher Toggle -->
+    <div class="pricing-switcher-wrapper">
+      <div class="pricing-switcher">
+        <button class="switch-btn active" id="btn-workplace" onclick="setPricingMode('workplace')">
+          <i class="fa-solid fa-building"></i> At Spa Workplace (Silverback Mall)
+        </button>
+        <button class="switch-btn" id="btn-home" onclick="setPricingMode('home')">
+          <i class="fa-solid fa-house-chimney"></i> Home / Outcall Visit (We Come To You)
+        </button>
+      </div>
+    </div>
+
+    <!-- Sauna & Aerobics Grid -->
+    <div class="packages-grid">
+      <!-- Card 1 -->
+      <div class="package-card glass-panel">
+        <div class="package-icon">♨️</div>
+        <h3 class="package-title">SAUNA ONLY</h3>
+        <div class="package-price">5,000 <span>Frw</span></div>
+        <p class="pillar-desc">Full session access to our luxury wooden steam sauna.</p>
+        <button onclick="openBookingModal('Sauna Only')" class="btn-outline-gold" style="margin-top:1.5rem;">Select Package</button>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="package-card glass-panel">
+        <div class="package-icon">🏃‍♀️</div>
+        <h3 class="package-title">AEROBIC ONLY</h3>
+        <div class="package-price">3,000 <span>Frw</span></div>
+        <p class="pillar-desc">Guided aerobic workout session for energy & fitness.</p>
+        <button onclick="openBookingModal('Aerobic Only')" class="btn-outline-gold" style="margin-top:1.5rem;">Select Package</button>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="package-card glass-panel">
+        <div class="package-icon">🔥</div>
+        <h3 class="package-title">SAUNA + AEROBIC</h3>
+        <div class="package-price">6,000 <span>Frw</span></div>
+        <p class="pillar-desc">Combined aerobic exercise followed by relaxing steam bath.</p>
+        <button onclick="openBookingModal('Sauna + Aerobic Combo')" class="btn-outline-gold" style="margin-top:1.5rem;">Select Package</button>
+      </div>
+
+      <!-- Card 4 Featured -->
+      <div class="package-card glass-panel featured">
+        <div class="featured-badge">BEST VALUE</div>
+        <div class="package-icon">👑</div>
+        <h3 class="package-title">1 MONTH ABONNEMENT</h3>
+        <div class="package-price">40,000 <span>Frw</span></div>
+        <p class="pillar-desc">Unlimited 1-Month pass for Sauna and Aerobic sessions!</p>
+        <button onclick="openBookingModal('1 Month Sauna & Aerobic Abonnement')" class="btn-gold" style="margin-top:1.5rem;">Get Monthly Pass</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Massage Menu Catalog Section -->
+  <section class="section" id="services" style="padding-top:0;">
+    <div class="section-header">
+      <span class="gold-badge">Therapeutic Menu</span>
+      <h2 class="section-title">Massage Services</h2>
+      <p class="section-subtitle">
+        Showing prices for: <strong id="current-location-text" style="color:var(--color-gold-light);">At Spa Workplace (Silverback Mall)</strong>
+      </p>
+    </div>
+
+    <!-- Filter & Search Bar -->
+    <div class="filter-bar">
+      <div class="filter-tabs">
+        <button class="tab-btn active" onclick="filterCategory('all', this)">All (13)</button>
+        <button class="tab-btn" onclick="filterCategory('quick', this)">Quick Sessions (30 min)</button>
+        <button class="tab-btn" onclick="filterCategory('relax', this)">Relaxation</button>
+        <button class="tab-btn" onclick="filterCategory('therapeutic', this)">Therapeutic & Deep</button>
+        <button class="tab-btn" onclick="filterCategory('combo', this)">Combo & Scrub</button>
+      </div>
+
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" id="service-search" class="search-input" placeholder="Search massage name..." onkeyup="searchServices()">
+      </div>
+    </div>
+
+    <!-- Dynamic Massage Services Container -->
+    <div class="services-grid" id="services-container">
+      <!-- Javascript will populate the 13 massage service cards -->
+    </div>
+  </section>
+
+  <!-- Facility Showcase Section -->
+  <section class="section facility-section">
+    <div class="section-header">
+      <span class="gold-badge">Atmosphere</span>
+      <h2 class="section-title">Designed for Pure Serenity</h2>
+    </div>
+
+    <div class="facility-grid">
+      <div class="facility-card">
+        <img src="assets/images/sauna_room.png" alt="VENE Sauna Room" class="facility-img">
+        <div class="facility-overlay">
+          <h3>Authentic Wooden Sauna</h3>
+          <p>Clean cedar wood, soothing heat, and refreshing eucalyptus steam.</p>
+        </div>
+      </div>
+
+      <div class="facility-card">
+        <img src="assets/images/hero_bg.png" alt="Massage Atmosphere" class="facility-img">
+        <div class="facility-overlay">
+          <h3>Hot Stone & Herbal Therapies</h3>
+          <p>Natural volcanic basalt stones and calming aromatic oils.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Contact Section -->
+  <section class="section" id="location">
+    <div class="section-header">
+      <span class="gold-badge">Visit Us</span>
+      <h2 class="section-title">Location & Contact</h2>
+      <p class="section-subtitle">Located conveniently at Kicukiro Sonatube inside Silverback Mall.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="info-card glass-panel">
+        <h3 style="color:var(--color-gold-light); margin-bottom:1.5rem; font-size:1.5rem;">Contact Information</h3>
+        
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div>
+            <strong>Address</strong>
+            <p style="color:var(--color-text-muted);">Kicukiro Sonatube, Silverback Mall<br>Kigali, Rwanda</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+          <div>
+            <strong>Phone / Call Direct</strong>
+            <p><a href="tel:0788625531" style="color:var(--color-gold-light); text-decoration:none; font-weight:700;">0788625531</a> / +250 788 625 531</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+          <div>
+            <strong>WhatsApp Instant Booking</strong>
+            <p style="color:var(--color-text-muted);">Available 7 days a week for in-spa & home visits.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:2rem;">
+          <button onclick="openBookingModal()" class="btn-gold" style="width:100%; justify-content:center;">
+            <i class="fa-brands fa-whatsapp"></i> Book via WhatsApp Now
+          </button>
+        </div>
+      </div>
+
+      <div class="map-container glass-panel">
+        <iframe class="map-iframe" src="https://maps.google.com/maps?q=Kicukiro%20Sonatube%20Silverback%20Mall%20Kigali&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Floating Action Button -->
+  <a href="https://wa.me/250788625531?text=Hello%20VENE%20Sauna%20and%20Massage,%20I%20would%20like%20to%20inquire%20about%20booking%20a%20service." target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Booking Modal Popup -->
+  <div class="modal-overlay" id="booking-modal">
+    <div class="modal-box glass-panel">
+      <button class="modal-close" onclick="closeBookingModal()">&times;</button>
+      <h3 style="color:var(--color-gold-light); margin-bottom:0.5rem; font-size:1.6rem;" class="font-serif">Book Appointment</h3>
+      <p style="color:var(--color-text-muted); font-size:0.9rem; margin-bottom:1.5rem;">Select your desired service to send an instant message on WhatsApp.</p>
+
+      <form id="booking-form" onsubmit="handleBookingSubmit(event)">
+        <div class="form-group">
+          <label class="form-label">Full Name</label>
+          <input type="text" id="booking-name" class="form-input" placeholder="Your Name" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Location Type</label>
+          <select id="booking-type" class="form-select" onchange="updateModalServices()">
+            <option value="workplace">At Spa Workplace (Silverback Mall)</option>
+            <option value="home">Home / Hotel Mobile Visit</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Select Service</label>
+          <select id="booking-service" class="form-select" required>
+            <!-- Dynamically populated -->
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Preferred Date & Time</label>
+          <input type="datetime-local" id="booking-time" class="form-input" required>
+        </div>
+
+        <button type="submit" class="btn-gold" style="width:100%; justify-content:center; margin-top:1rem;">
+          <i class="fa-brands fa-whatsapp"></i> Send Booking on WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <img src="assets/images/logo.png" alt="VENE Logo" class="footer-logo">
+    <h3 style="color:#fff; font-size:1.2rem; margin-bottom:0.5rem;">VENE Sauna and Massage</h3>
+    <p class="footer-text">Kicukiro Sonatube, Silverback Mall, Kigali • Phone: 0788625531</p>
+    <p style="font-size:0.8rem; color:var(--color-text-muted);">&copy; 2026 VENE Sauna and Massage. All Rights Reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
