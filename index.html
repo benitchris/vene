@@ -19,13 +19,16 @@
         <img src="assets/images/logo.png" alt="VENE Sauna and Massage Logo" class="brand-logo-img">
         <div class="brand-title">VENE <span>SAUNA & MASSAGE</span></div>
       </a>
-      <ul class="nav-links">
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#packages">Sauna & Aerobics</a></li>
-        <li><a href="#services">Massage Menu</a></li>
-        <li><a href="#location">Location</a></li>
-        <li><a href="tel:0788625531" class="btn-outline-gold"><i class="fa-solid fa-phone"></i> 0788625531</a></li>
-        <li><button onclick="openBookingModal()" class="btn-gold"><i class="fa-brands fa-whatsapp"></i> Book Now</button></li>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars" id="mobile-menu-icon"></i>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" onclick="closeMobileMenu()">About Us</a></li>
+        <li><a href="#packages" onclick="closeMobileMenu()">Sauna & Aerobics</a></li>
+        <li><a href="#services" onclick="closeMobileMenu()">Massage Menu</a></li>
+        <li><a href="#location" onclick="closeMobileMenu()">Location</a></li>
+        <li><a href="tel:0788625531" class="btn-outline-gold" onclick="closeMobileMenu()"><i class="fa-solid fa-phone"></i> 0788625531</a></li>
+        <li><button onclick="closeMobileMenu(); openBookingModal();" class="btn-gold"><i class="fa-brands fa-whatsapp"></i> Book Now</button></li>
       </ul>
     </div>
   </nav>

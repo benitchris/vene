@@ -139,6 +139,27 @@ const massageServices = [
   }
 ];
 
+// Mobile Menu Logic
+function toggleMobileMenu() {
+  const navLinks = document.getElementById('nav-links');
+  const menuIcon = document.getElementById('mobile-menu-icon');
+  if (!navLinks) return;
+
+  const isOpen = navLinks.classList.toggle('mobile-open');
+  if (menuIcon) {
+    menuIcon.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+  }
+}
+
+function closeMobileMenu() {
+  const navLinks = document.getElementById('nav-links');
+  const menuIcon = document.getElementById('mobile-menu-icon');
+  if (navLinks && navLinks.classList.contains('mobile-open')) {
+    navLinks.classList.remove('mobile-open');
+    if (menuIcon) menuIcon.className = 'fa-solid fa-bars';
+  }
+}
+
 // Initialize application on load
 document.addEventListener('DOMContentLoaded', () => {
   renderServices();
