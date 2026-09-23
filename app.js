@@ -382,3 +382,25 @@ function handleBookingSubmit(event) {
   window.open(whatsappUrl, '_blank');
   closeBookingModal();
 }
+
+// Gallery Lightbox Modal Handlers
+function openLightbox(imageSrc, title, desc) {
+  const modal = document.getElementById('lightbox-modal');
+  const img = document.getElementById('lightbox-img');
+  const titleEl = document.getElementById('lightbox-title');
+  const descEl = document.getElementById('lightbox-desc');
+  
+  if (!modal || !img) return;
+
+  img.src = imageSrc;
+  if (titleEl) titleEl.innerText = title;
+  if (descEl) descEl.innerText = desc;
+
+  modal.classList.add('active');
+}
+
+function closeLightbox() {
+  const modal = document.getElementById('lightbox-modal');
+  if (modal) modal.classList.remove('active');
+}
+

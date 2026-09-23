@@ -26,6 +26,7 @@
         <li><a href="#about" onclick="closeMobileMenu()">About Us</a></li>
         <li><a href="#packages" onclick="closeMobileMenu()">Sauna & Aerobics</a></li>
         <li><a href="#services" onclick="closeMobileMenu()">Massage Menu</a></li>
+        <li><a href="#gallery" onclick="closeMobileMenu()">Gallery</a></li>
         <li><a href="#location" onclick="closeMobileMenu()">Location</a></li>
         <li><a href="tel:0788625531" class="btn-outline-gold" onclick="closeMobileMenu()"><i class="fa-solid fa-phone"></i> 0788625531</a></li>
         <li><button onclick="closeMobileMenu(); openBookingModal();" class="btn-gold"><i class="fa-brands fa-whatsapp"></i> Book Now</button></li>
@@ -47,7 +48,7 @@
       </div>
       
       <p class="hero-description">
-        Experience ultimate wellness, deep muscle relaxation, and rejuvenating steam treatments. Enjoy our luxury spa center at Silverback Mall or call us for professional home & hotel mobile massage visits across Kigali!
+        Experience ultimate wellness, deep muscle relaxation, and rejuvenating steam treatments. Enjoy our luxury spa center at Silverback Mall with <strong>Free & Secure Customer Parking</strong>, or call us for professional mobile home & hotel visits across Kigali!
       </p>
 
       <div class="hero-actions">
@@ -78,6 +79,11 @@
         <div class="pillar-icon"><i class="fa-solid fa-spa"></i></div>
         <div class="pillar-title">Restore Your Body</div>
         <div class="pillar-desc">Purifying sauna steam & invigorating workouts</div>
+      </div>
+      <div class="pillar-item">
+        <div class="pillar-icon"><i class="fa-solid fa-square-parking"></i></div>
+        <div class="pillar-title">Free Customer Parking</div>
+        <div class="pillar-desc">Spacious 24/7 safe parking for your car at Silverback Mall</div>
       </div>
       <div class="pillar-item">
         <div class="pillar-icon"><i class="fa-solid fa-leaf"></i></div>
@@ -180,27 +186,78 @@
     </div>
   </section>
 
-  <!-- Facility Showcase Section -->
-  <section class="section facility-section">
+  <!-- Facility & Amenities Gallery Section -->
+  <section class="section" id="gallery">
     <div class="section-header">
-      <span class="gold-badge">Atmosphere</span>
-      <h2 class="section-title">Designed for Pure Serenity</h2>
+      <span class="gold-badge">Atmosphere & Amenities</span>
+      <h2 class="section-title">VENE Facility Gallery</h2>
+      <p class="section-subtitle">Take a visual tour inside our luxury spa, sauna room, fitness studio, and free customer parking.</p>
     </div>
 
-    <div class="facility-grid">
-      <div class="facility-card">
-        <img src="assets/images/sauna_room.png" alt="VENE Sauna Room" class="facility-img">
-        <div class="facility-overlay">
-          <h3>Authentic Wooden Sauna</h3>
-          <p>Clean cedar wood, soothing heat, and refreshing eucalyptus steam.</p>
+    <!-- VIP Free Parking Feature Banner -->
+    <div class="parking-banner glass-panel">
+      <div class="parking-banner-icon"><i class="fa-solid fa-square-parking"></i></div>
+      <div class="parking-banner-content">
+        <span class="gold-badge" style="margin-bottom:0.4rem; display:inline-block;">Complimentary Customer Perk</span>
+        <h3><i class="fa-solid fa-car"></i> Free & 24/7 Secured Car Parking</h3>
+        <p>Drive in with total peace of mind! Enjoy spacious, safe, and 100% free car parking directly inside Silverback Mall while you indulge in our sauna, aerobic, or massage therapies.</p>
+      </div>
+      <div class="parking-banner-badge">
+        <span class="badge-text">100% FREE PARKING</span>
+      </div>
+    </div>
+
+    <!-- Interactive Gallery Grid -->
+    <div class="gallery-grid">
+      <!-- Gallery Card 1: Authentic Wooden Sauna -->
+      <div class="gallery-card glass-panel" onclick="openLightbox('assets/images/sauna_room.png', 'Authentic Wooden Sauna Room', 'Rich cedar and mahogany wood panelling, soothing dry & steam heat, and ergonomic corner seating.')">
+        <div class="gallery-img-wrapper">
+          <img src="assets/images/sauna_room.png" alt="Authentic Wooden Sauna Room" class="gallery-img">
+          <div class="gallery-overlay-badge"><i class="fa-solid fa-fire-flame-curved"></i> Sauna</div>
+          <div class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-info">
+          <h4>Authentic Wooden Sauna</h4>
+          <p>Clean mahogany wood, refreshing steam, and warm ambient glow.</p>
         </div>
       </div>
 
-      <div class="facility-card">
-        <img src="assets/images/hero_bg.png" alt="Massage Atmosphere" class="facility-img">
-        <div class="facility-overlay">
-          <h3>Hot Stone & Herbal Therapies</h3>
-          <p>Natural volcanic basalt stones and calming aromatic oils.</p>
+      <!-- Gallery Card 2: Massage Therapy Bed -->
+      <div class="gallery-card glass-panel" onclick="openLightbox('assets/images/massage_bed.png', 'Private Massage Therapy Room', 'Clean white linens, tranquil lighting, mint wall decor, and holistic aromatics.')">
+        <div class="gallery-img-wrapper">
+          <img src="assets/images/massage_bed.png" alt="Private Massage Therapy Room" class="gallery-img">
+          <div class="gallery-overlay-badge"><i class="fa-solid fa-spa"></i> Massage Room</div>
+          <div class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-info">
+          <h4>Private Therapy Suite</h4>
+          <p>Fresh white linens, soothing mint green walls, and calming aromatherapy.</p>
+        </div>
+      </div>
+
+      <!-- Gallery Card 3: Aerobics & Workout Studio -->
+      <div class="gallery-card glass-panel" onclick="openLightbox('assets/images/aerobics_studio.png', 'Aerobics & Fitness Workout Studio', 'Spacious fitness hall with shock-absorbing foam floor mats, mirror wall, step blocks, and sound system.')">
+        <div class="gallery-img-wrapper">
+          <img src="assets/images/aerobics_studio.png" alt="Aerobics Workout Studio" class="gallery-img">
+          <div class="gallery-overlay-badge"><i class="fa-solid fa-dumbbell"></i> Fitness Studio</div>
+          <div class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-info">
+          <h4>Aerobics Studio</h4>
+          <p>Full-mirror walls, high-impact foam mats, step benches & energizing audio.</p>
+        </div>
+      </div>
+
+      <!-- Gallery Card 4: Free Customer Parking -->
+      <div class="gallery-card glass-panel" onclick="openLightbox('assets/images/free_parking.png', 'Free Customer Parking at Silverback Mall', 'Spacious, well-lit, and 24/7 guarded car parking for all VENE guests.')">
+        <div class="gallery-img-wrapper">
+          <img src="assets/images/free_parking.png" alt="Free Customer Parking at Silverback Mall" class="gallery-img">
+          <div class="gallery-overlay-badge"><i class="fa-solid fa-square-parking"></i> Free Parking</div>
+          <div class="gallery-zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+        <div class="gallery-info">
+          <h4>Free Customer Parking</h4>
+          <p>Spacious, well-lit, and 24/7 guarded vehicle parking at Silverback Mall.</p>
         </div>
       </div>
     </div>
@@ -223,6 +280,14 @@
           <div>
             <strong>Address</strong>
             <p style="color:var(--color-text-muted);">Kicukiro Sonatube, Silverback Mall<br>Kigali, Rwanda</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-square-parking"></i></div>
+          <div>
+            <strong>Car Parking</strong>
+            <p style="color:var(--color-gold-light); font-weight:700;">100% Free & 24/7 Guarded Customer Parking</p>
           </div>
         </div>
 
@@ -274,17 +339,29 @@
       <div class="bottom-nav-cta-circle">
         <i class="fa-brands fa-whatsapp"></i>
       </div>
-      <span>Book Now</span>
+      <span>Book</span>
     </a>
-    <a href="#services" class="bottom-nav-item" id="bn-massage" onclick="setBottomNav('bn-massage')">
-      <i class="fa-solid fa-spa"></i>
-      <span>Massage</span>
+    <a href="#gallery" class="bottom-nav-item" id="bn-gallery" onclick="setBottomNav('bn-gallery')">
+      <i class="fa-solid fa-images"></i>
+      <span>Gallery</span>
     </a>
     <a href="#location" class="bottom-nav-item" id="bn-location" onclick="setBottomNav('bn-location')">
       <i class="fa-solid fa-location-dot"></i>
       <span>Location</span>
     </a>
   </nav>
+
+  <!-- Image Lightbox Modal -->
+  <div class="modal-overlay" id="lightbox-modal" onclick="closeLightbox()">
+    <div class="lightbox-box glass-panel" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeLightbox()">&times;</button>
+      <img src="" id="lightbox-img" alt="Gallery Preview" class="lightbox-preview-img">
+      <div style="padding-top: 1rem;">
+        <h3 id="lightbox-title" style="color:var(--color-gold-light); font-size:1.4rem;" class="font-serif"></h3>
+        <p id="lightbox-desc" style="color:var(--color-text-muted); font-size:0.92rem; margin-top:0.4rem;"></p>
+      </div>
+    </div>
+  </div>
 
   <!-- Booking Modal Popup -->
   <div class="modal-overlay" id="booking-modal">
@@ -330,7 +407,7 @@
   <footer class="footer">
     <img src="assets/images/logo.png" alt="VENE Logo" class="footer-logo">
     <h3 style="color:#fff; font-size:1.2rem; margin-bottom:0.5rem;">VENE Sauna and Massage</h3>
-    <p class="footer-text">Kicukiro Sonatube, Silverback Mall, Kigali • Phone: 0788625531</p>
+    <p class="footer-text">Kicukiro Sonatube, Silverback Mall, Kigali • Free Customer Parking • Phone: 0788625531</p>
     <p style="font-size:0.8rem; color:var(--color-text-muted);">&copy; 2026 VENE Sauna and Massage. All Rights Reserved.</p>
   </footer>
 
